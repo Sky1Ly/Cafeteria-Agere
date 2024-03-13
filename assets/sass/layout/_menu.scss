@@ -1,26 +1,43 @@
+@import '../abstracts/variables';
+
 .navBar {
+  display: flex;
+  height: 3rem;
+  margin: 2rem;
+  align-items: center;
+  justify-content: space-around;
+
+  &__menu {
     display: flex;
-    width: 100%;
-    height: 55px;
-    padding: 30px;
     align-items: center;
-    justify-content: space-around;
 
-    &__logo {
-        width: 2.5rem;
+    &-logo {
+      width: 2.5rem;
+      margin-right: 3rem;
     }
 
-    &__ul {
-        display: flex;
-        list-style: none;
-        margin: 0;
+    &-ul {
+      list-style: none;
     }
 
-    &__ul li{
-        margin-left: 30px;
+    &-ul li {
+      display: inline-block;
     }
 
-    &__ul li a{
-        text-decoration: none;
+    &-ul li a {
+      text-decoration: none;
+      margin: 15px;
+      color: $color-isabelline;
     }
+
+    &-ul li a:hover {
+        color: $color-black;
+      }
+  }
+
+  .containter-btns{
+    .btn-registro {
+      margin-right: 1.3rem;
+    }
+  }
 }

@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-body {
+.pt-mono {
   font-family: "PT Mono", monospace;
   font-weight: 400;
   font-style: normal;
+  font-size: 1rem;
 }
 
 .roboto-thin {
@@ -11,27 +12,125 @@ body {
   font-style: normal;
 }
 
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.btn-registro {
+  height: 2rem;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: transparent;
+  color: #989797;
+  border: 1px solid #989797;
+}
+
+.btn-login {
+  height: 2rem;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: #4CA866;
+  color: white;
+  border: 1px solid #4CA866;
+}
+
+.header .header__firs {
+  display: flex;
+  align-items: center;
+}
+.header .header__firs-div {
+  position: relative;
+  top: -5rem;
+  margin-left: 3.5rem;
+  width: 12rem;
+}
+
+.header__second {
+  display: flex;
+  position: relative;
+  width: 30rem;
+  top: -7.4rem;
+  left: 25rem;
+  background-color: #c7c7c7;
+  padding: 10px;
+}
+.header__second div {
+  width: 10rem;
+}
+
+.icons {
+  position: relative;
+  top: -16rem;
+  left: 55rem;
+}
+.icons__orange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4572e;
+  z-index: 5;
+  width: 7rem;
+  height: 7rem;
+}
+.icons__yellow {
+  position: absolute;
+  z-index: -1;
+  width: 7rem;
+  height: 7rem;
+  background-color: rgb(221, 221, 38);
+  top: 1.6rem;
+  left: 1rem;
+}
+
 .navBar {
   display: flex;
-  width: 100%;
-  height: 55px;
-  padding: 30px;
+  height: 3rem;
+  margin: 2rem;
   align-items: center;
   justify-content: space-around;
 }
-.navBar__logo {
-  width: 2.5rem;
-}
-.navBar__ul {
+.navBar__menu {
   display: flex;
+  align-items: center;
+}
+.navBar__menu-logo {
+  width: 2.5rem;
+  margin-right: 3rem;
+}
+.navBar__menu-ul {
   list-style: none;
-  margin: 0;
 }
-.navBar__ul li {
-  margin-left: 30px;
+.navBar__menu-ul li {
+  display: inline-block;
 }
-.navBar__ul li a {
+.navBar__menu-ul li a {
   text-decoration: none;
+  margin: 15px;
+  color: #989797;
+}
+.navBar__menu-ul li a:hover {
+  color: #000;
+}
+.navBar .containter-btns .btn-registro {
+  margin-right: 1.3rem;
 }
 
 /*# sourceMappingURL=style.css.map */

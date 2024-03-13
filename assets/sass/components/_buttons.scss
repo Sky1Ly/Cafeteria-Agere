@@ -1,0 +1,16 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.btn-registro {
+    @include style-buttons;
+    background-color: transparent;
+    color: $color-isabelline;
+    border: 1px solid $color-isabelline;
+}
+
+.btn-login {
+    @include style-buttons;
+    background-color: $color-shiny-shamrock;
+    color: white;
+    border: 1px solid $color-shiny-shamrock;
+}

@@ -1,0 +1,55 @@
+@import "../abstracts/variables";
+
+.header {
+  .header__firs {
+    display: flex;
+    align-items: center;
+
+    &-div {
+      position: relative;
+      top: -5rem;
+      margin-left: 3.5rem;
+      width: 12rem;
+    }
+  }
+}
+
+.header__second {
+  display: flex;
+  position: relative;
+  width: 30rem;
+  top: -7.4rem;
+  left: 25rem;
+  background-color: $color-grey;
+  padding: 10px;
+
+  div {
+    width: 10rem;
+  }
+}
+
+.icons {
+  position: relative;
+  top: -16rem;
+  left: 55rem;
+
+  &__orange {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4572e;
+    z-index: 5;
+    width: 7rem;
+    height: 7rem;
+  }
+
+  &__yellow {
+    position: absolute;
+    z-index: -1;
+    width: 7rem;
+    height: 7rem;
+    background-color: rgb(221, 221, 38);
+    top: 1.6rem;
+    left: 1rem;
+  }
+}
