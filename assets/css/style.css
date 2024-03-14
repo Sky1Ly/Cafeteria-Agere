@@ -29,9 +29,6 @@ p {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 
 .btn-registro {
@@ -47,14 +44,21 @@ p {
   height: 2rem;
   border-radius: 5px;
   padding: 8px;
-  background-color: #4CA866;
+  background-color: #4ca866;
   color: white;
-  border: 1px solid #4CA866;
+  border: 1px solid #4ca866;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+}
 .header .header__firs {
   display: flex;
   align-items: center;
+}
+.header .header__firs-img {
+  width: 56.2rem;
 }
 .header .header__firs-div {
   position: relative;
@@ -64,40 +68,45 @@ p {
 }
 
 .header__second {
+  background-color: #adadad;
   display: flex;
-  position: relative;
-  width: 30rem;
-  top: -7.4rem;
-  left: 25rem;
-  background-color: #c7c7c7;
-  padding: 10px;
+  position: absolute;
+  top: 26rem;
+  margin-left: 8rem;
+  height: 6rem;
+  padding: 20px;
 }
 .header__second div {
   width: 10rem;
 }
 
 .icons {
-  position: relative;
-  top: -16rem;
-  left: 55rem;
+  position: absolute;
 }
 .icons__orange {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 18rem;
+  left: 19rem;
   background-color: #e4572e;
-  z-index: 5;
-  width: 7rem;
-  height: 7rem;
+  z-index: 2;
+  width: 8rem;
+  height: 8rem;
+}
+.icons__orange i {
+  font-size: 2rem;
+  color: white;
 }
 .icons__yellow {
   position: absolute;
-  z-index: -1;
-  width: 7rem;
-  height: 7rem;
-  background-color: rgb(221, 221, 38);
-  top: 1.6rem;
-  left: 1rem;
+  top: 19.5rem;
+  left: 20.3rem;
+  z-index: 1;
+  width: 8rem;
+  height: 8rem;
+  background-color: #eacb31;
 }
 
 .navBar {
@@ -131,6 +140,39 @@ p {
 }
 .navBar .containter-btns .btn-registro {
   margin-right: 1.3rem;
+}
+
+.conocenos {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+.conocenos__column {
+  margin: 0 2rem;
+}
+
+#colN2 {
+  position: absolute;
+  top: 34.5rem;
+  width: 29rem;
+  height: 11rem;
+  background-color: #3c91e6;
+}
+#colN2 .imgMap {
+  position: absolute;
+  margin-top: 2rem;
+  margin-right: 5rem;
+  width: 25rem;
+}
+#colN2 .imgCafe {
+  position: absolute;
+  width: 8rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+#colN3 {
+  width: 25rem;
 }
 
 /*# sourceMappingURL=style.css.map */

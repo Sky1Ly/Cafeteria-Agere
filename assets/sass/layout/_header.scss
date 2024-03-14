@@ -1,9 +1,16 @@
 @import "../abstracts/variables";
 
 .header {
+  display: flex;
+  justify-content: center;
+
   .header__firs {
     display: flex;
     align-items: center;
+
+    &-img {
+      width: 56.2rem;
+    }
 
     &-div {
       position: relative;
@@ -15,13 +22,13 @@
 }
 
 .header__second {
-  display: flex;
-  position: relative;
-  width: 30rem;
-  top: -7.4rem;
-  left: 25rem;
   background-color: $color-grey;
-  padding: 10px;
+  display: flex;
+  position: absolute;
+  top: 26rem;
+  margin-left: 8rem;
+  height: 6rem;
+  padding: 20px;
 
   div {
     width: 10rem;
@@ -29,27 +36,33 @@
 }
 
 .icons {
-  position: relative;
-  top: -16rem;
-  left: 55rem;
+  position: absolute;
 
   &__orange {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e4572e;
-    z-index: 5;
-    width: 7rem;
-    height: 7rem;
+    position: absolute;
+    top: 18rem;
+    left: 19rem;
+    background-color: $color-orange;
+    z-index: 2;
+    width: 8rem;
+    height: 8rem;
+
+    i {
+      font-size: 2rem;
+      color: white;
+    }
   }
 
   &__yellow {
     position: absolute;
-    z-index: -1;
-    width: 7rem;
-    height: 7rem;
-    background-color: rgb(221, 221, 38);
-    top: 1.6rem;
-    left: 1rem;
+    top: 19.5rem;
+    left: 20.3rem;
+    z-index: 1;
+    width: 8rem;
+    height: 8rem;
+    background-color: $color-yellow;
   }
 }
