@@ -1,38 +1,55 @@
-@import '../abstracts/variables';
+@import "../abstracts/variables";
 
 .conocenos {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
 
-    &__column {
-        margin: 0 2rem;
-    }
+  &__column {
+    margin: 0 2rem;
+    width: 33%;
+  }
 }
 
 #colN2 {
-    position: absolute;
-    top: 34.5rem;
-    width: 29rem;
-    height: 11rem;
+    width: 33%;
+
+  .divColor {
+    position: relative;
+    top: -15%;
+    left: 23%;
+    width: 124%;
+    height: 80%;
     background-color: $color-blue;
+  }
 
-    .imgMap {
-        position: absolute;
-        margin-top: 2rem;
-        margin-right: 5rem;
-        width: 25rem;
-    }
+  .imgMap {
+    position: relative;
+    top: -80%;
+    width: 100%;
+  }
 
-    .imgCafe {
-        position: absolute;
-        width: 8rem;
-        height: 10rem;
-        object-fit: cover;
-
-    }
+  .imgCafe {
+    position: relative;
+    top: -174%;
+    left: 123%;
+    width: 25%;
+    height: 50%;
+    z-index: 2;
+    object-fit: cover;
+  }
 }
 
 #colN3 {
-    width: 25rem;
+  width: 33%;
+
+  img {
+    position: relative;
+    width: 86%;
+    height: 93%;
+    object-fit: cover;
+    top: -15%;
+    left: 22%;
+    z-index: 1;
+  }
 }

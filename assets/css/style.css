@@ -149,30 +149,46 @@ p {
 }
 .conocenos__column {
   margin: 0 2rem;
+  width: 33%;
 }
 
 #colN2 {
-  position: absolute;
-  top: 34.5rem;
-  width: 29rem;
-  height: 11rem;
+  width: 33%;
+}
+#colN2 .divColor {
+  position: relative;
+  top: -15%;
+  left: 23%;
+  width: 124%;
+  height: 80%;
   background-color: #3c91e6;
 }
 #colN2 .imgMap {
-  position: absolute;
-  margin-top: 2rem;
-  margin-right: 5rem;
-  width: 25rem;
+  position: relative;
+  top: -80%;
+  width: 100%;
 }
 #colN2 .imgCafe {
-  position: absolute;
-  width: 8rem;
-  height: 10rem;
+  position: relative;
+  top: -174%;
+  left: 123%;
+  width: 25%;
+  height: 50%;
+  z-index: 2;
   object-fit: cover;
 }
 
 #colN3 {
-  width: 25rem;
+  width: 33%;
+}
+#colN3 img {
+  position: relative;
+  width: 86%;
+  height: 93%;
+  object-fit: cover;
+  top: -15%;
+  left: 22%;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
